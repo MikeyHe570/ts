@@ -1,0 +1,39 @@
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        shaitool
+Server Hostname:        192.168.128.129
+Server Port:            55555
+
+Document Path:          /
+Document Length:        11321 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   3.250 seconds
+Complete requests:      5000
+Failed requests:        0
+Total transferred:      57150000 bytes
+HTML transferred:       56605000 bytes
+Requests per second:    1538.46 [#/sec] (mean)
+Time per request:       650.002 [ms] (mean)
+Time per request:       0.650 [ms] (mean, across all concurrent requests)
+Transfer rate:          17172.42 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  164 466.9      1    3004
+Processing:    37  352 156.7    392     713
+Waiting:       23  312 155.3    346     704
+Total:         37  516 457.9    437    3218
+
+Percentage of the requests served within a certain time (ms)
+  50%    437
+  66%    501
+  75%    526
+  80%    542
+  90%   1205
+  95%   1332
+  98%   1625
+  99%   3126
+ 100%   3218 (longest request)

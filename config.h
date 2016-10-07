@@ -18,6 +18,7 @@ extern "C"{
 //#include <pthread.h>
 #include "pool.h"
 //#include "timer.h"
+#define SERVER_STRING "Server: shaitool first sever httpd/0.1.0\r\n"
 //debug flag
 #define SERVER_STRING "Server: shaitool first sever httpd/0.1.0\r\n"
 #define DEBUG 0
