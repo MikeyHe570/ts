@@ -19,6 +19,7 @@ extern "C"{
 #include "pool.h"
 //#include "timer.h"
 //debug flag
+#define SERVER_STRING "Server: shaitool first sever httpd/0.1.0\r\n"
 #define DEBUG 0
 //the sleep time for distribute and manage
 #define SLEEP_TIME 2
