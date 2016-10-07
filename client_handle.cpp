@@ -459,8 +459,8 @@ void unimplemented(int client)
 
  sprintf(buf, "HTTP/1.0 501 Method Not Implemented\r\n");
  send(client, buf, strlen(buf), 0);
-// sprintf(buf, SERVER_STRING);
- //send(client, buf, strlen(buf), 0);
+ sprintf(buf, SERVER_STRING);
+ send(client, buf, strlen(buf), 0);
  sprintf(buf, "Content-Type: text/html\r\n");
  send(client, buf, strlen(buf), 0);
  sprintf(buf, "\r\n");
@@ -487,8 +487,8 @@ void not_found(int client)
 #endif
  sprintf(buf, "HTTP/1.0 404 NOT FOUND\r\n");
  send(client, buf, strlen(buf), 0);
-// sprintf(buf, SERVER_STRING);
- //send(client, buf, strlen(buf), 0);
+ sprintf(buf, SERVER_STRING);
+ send(client, buf, strlen(buf), 0);
  sprintf(buf, "Content-Type: text/html\r\n");
  send(client, buf, strlen(buf), 0);
  sprintf(buf, "\r\n");
@@ -561,8 +561,8 @@ void headers(int client)
  send(client, buf, strlen(buf), 0);
  strcpy(buf, "connection:keep-alive\r\n");
  send(client, buf, strlen(buf), 0);
- //strcpy(buf, SERVER_STRING);
- //send(client, buf, strlen(buf), 0);
+ strcpy(buf, SERVER_STRING);
+ send(client, buf, strlen(buf), 0);
  sprintf(buf, "Content-Type: text/html\r\n");
  send(client, buf, strlen(buf), 0);
  strcpy(buf, "\r\n");
